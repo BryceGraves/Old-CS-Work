@@ -17,8 +17,8 @@ int mode(vector<int> data) {
 			if (newMode != data[i]) {
 				newMode = data[i];
 				newCount = 1;
-				} else { 
-				++newCount; 
+				} else {
+				++newCount;
 				if (newCount > count) {
 					mode = data[i];
 					++count;
