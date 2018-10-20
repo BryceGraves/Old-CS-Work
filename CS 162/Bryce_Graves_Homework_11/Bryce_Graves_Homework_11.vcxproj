@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Bryce_Graves_Homework_11</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxGui\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src\extra;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\include;libs/libfreenect/platform/windows;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxNetwork\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\src;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\Win32\assimp.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32\libusb.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32\libusbd.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_calib3d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_contrib249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_core249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_features2d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_flann249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_gpu249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_highgui249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_imgproc249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_legacy249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ml249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_nonfree249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_objdetect249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_photo249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_stitching249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_superres249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ts249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_video249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_videostab249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxGui\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src\extra;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\include;libs/libfreenect/platform/windows;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxNetwork\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\src;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\assimp.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\x64\libusb.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\x64\libusbd.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_calib3d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_contrib249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_core249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_features2d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_flann249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_gpu249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_highgui249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_imgproc249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_legacy249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_ml249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_nonfree249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_objdetect249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_photo249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_stitching249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_superres249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_ts249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_video249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_videostab249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxGui\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src\extra;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\include;libs/libfreenect/platform/windows;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxNetwork\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\src;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\Win32\assimp.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32\libusb.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32\libusbd.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_calib3d249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_contrib249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_core249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_features2d249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_flann249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_gpu249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_highgui249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_imgproc249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_legacy249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_ml249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_nonfree249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_objdetect249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_photo249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_stitching249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_superres249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_ts249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_video249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\opencv_videostab249.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxGui\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\src\extra;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\include;libs/libfreenect/platform/windows;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxNetwork\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src;C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\src;
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\assimp.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\x64\libusb.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\x64\libusbd.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_calib3d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_contrib249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_core249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_features2d249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_flann249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_gpu249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_highgui249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_imgproc249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_legacy249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_ml249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_nonfree249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_objdetect249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_photo249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_stitching249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_superres249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_ts249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_video249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\opencv_videostab249d.lib%3b
+C:\Users\Bryce\Desktop\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxBaseGui.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxButton.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxGuiGroup.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxLabel.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxPanel.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxSlider.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxSliderGroup.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxToggle.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\audio.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\cameras.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\core.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\flags.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\keep_alive.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\loader.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\registration.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\tilt.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\usb_libusb10.c" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\src\extra\ofxKinectExtras.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\src\ofxKinect.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPClient.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPManager.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPServer.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxUDPManager.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvColorImage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvContourFinder.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvFloatImage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvImage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscBundle.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscMessage.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscReceiver.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscSender.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\src_colors.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\svgtiny.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\svgtiny_gradient.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\svgtiny_list.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\src\ofxSvg.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs\CreEPS.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\anim.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\camera.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\color4.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\config.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\defs.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\light.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\material.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\scene.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\texture.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\types.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\version.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxBaseGui.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxButton.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxGui.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxGuiGroup.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxLabel.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxPanel.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxSlider.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxSliderGroup.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxGui\src\ofxToggle.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include\libfreenect.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include\libfreenect_audio.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\include\libfreenect_registration.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusb.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_internal.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads_win32.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\stdbool.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\unistd.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\cameras.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\flags.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\freenect_internal.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\keep_alive.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\loader.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\registration.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libfreenect\src\usb_libusb10.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0\libusb.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\libs\libusb-win32\include\lusb0_usb.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\src\extra\ofxKinectExtras.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\src\ofxBase3DVideo.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxKinect\src\ofxKinect.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxNetwork.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxNetworkUtils.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPClient.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPManager.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxTCPServer.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxNetwork\src\ofxUDPManager.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d\calib3d.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\contrib.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\detection_based_tracker.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\hybridtracker.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\openfabmap.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\retina.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\core.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\core_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\cuda_devptrs.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\devmem2d.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\gpumat.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\internal.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opengl_interop.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opengl_interop_deprecated.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\types_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\version.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\wimage.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\all_indices.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\any.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\autotuned_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\config.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\defines.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\dist.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\dummy.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\dynamic_bitset.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\flann.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\flann_base.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\general.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\ground_truth.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\hdf5.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\heap.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\hierarchical_clustering_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\index_testing.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\kdtree_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\kdtree_single_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\kmeans_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\linear_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\logger.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\lsh_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\lsh_table.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\matrix.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\miniflann.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\nn_index.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\object_factory.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\params.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\random.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\sampling.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\saving.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\simplex_downhill.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\timer.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\block.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\border_interpolate.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\color.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\common.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\datamov_utils.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\color_detail.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\reduce.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\reduce_key_val.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\transform_detail.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\type_traits_detail.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\vec_distance_detail.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\dynamic_smem.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\emulation.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\filters.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\funcattrib.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\functional.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\limits.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\reduce.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\saturate_cast.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\scan.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\simd_functions.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\static_check.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\transform.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\type_traits.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\utility.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\vec_distance.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\vec_math.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\vec_traits.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\warp.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\warp_reduce.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\warp_shuffle.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\devmem2d.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\gpu.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\gpumat.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\stream_accessor.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui\cap_ios.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui\highgui.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui\highgui_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui\ios.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy\blobtrack.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy\compat.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy\legacy.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy\streams.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml\ml.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree\features2d.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree\gpu.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree\nonfree.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree\ocl.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\opencv.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\opencv_modules.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo\photo.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo\photo_c.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\autocalib.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\blenders.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\camera.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\exposure_compensate.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\matchers.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\motion_estimators.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\seam_finders.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\util.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\util_inl.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\warpers.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\warpers_inl.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\stitcher.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\warpers.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres\optical_flow.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres\superres.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\gpu_perf.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\gpu_test.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\ts.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\ts_gtest.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\ts_perf.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\deblurring.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\fast_marching.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\fast_marching_inl.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\frame_source.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\global_motion.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\inpainting.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\log.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\motion_stabilizing.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\optical_flow.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\stabilizer.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\videostab.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video\tracking.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video\video.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cv.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cv.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cvaux.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cvaux.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cvwimage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cxcore.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cxcore.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cxeigen.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\cxmisc.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\highgui.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\ml.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvBlob.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvColorImage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvConstants.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvContourFinder.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvFloatImage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvHaarFinder.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvImage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxCvShortImage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscException.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOsc.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscArg.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscBundle.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscMessage.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscParameterSync.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscReceiver.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxOsc\src\ofxOscSender.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\svgtiny.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\libs\svgTiny\src\svgtiny_internal.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxSvg\src\ofxSvg.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs\CreEPS.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxVectorGraphics\libs\CreEPS_Types.hpp" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxVectorGraphics\src\ofxVectorGraphics.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="..\..\of_v0.9.7_vs_release\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="src\ofApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
