@@ -1,0 +1,2 @@
+What multicast groups have been assigned to interface G0/0: FF02, FF00
+Why did PC-B receive the Global Routing Prefix and Subnet ID that you configured in R1: It did not recieve the global routing prefix from configuring R1.

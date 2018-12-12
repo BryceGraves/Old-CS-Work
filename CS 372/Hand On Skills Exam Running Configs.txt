@@ -1,0 +1,273 @@
+!! NETLAB+ saved configuration: time="2018-12-02 02:15:54 UTC" device="R1" hardware="C1941" reservation="299"
+!
+! Last configuration change at 08:25:23 UTC Sat Nov 14 2015
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+security passwords min-length 10
+enable secret 5 $1$esJl$aRYpsGoOZ3a4MWjhTpiOT0
+!
+no aaa new-model
+memory-size iomem 10
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name ccna-lab.com
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+multilink bundle-name authenticated
+!
+cts logging verbose
+!
+!
+license udi pid CISCO1941/K9 sn FTX18258670
+license accept end user agreement
+license boot module c1900 technology-package securityk9
+!
+!
+username admin password 7 0005170B0D555A160E325F
+!
+redundancy
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ description Subnet A
+ ip address 192.168.100.62 255.255.255.192
+ duplex auto
+ speed auto
+ ipv6 address FE80::1 link-local
+ ipv6 address 2001:DB8:ACAD:A::1/64
+ no shutdown
+!
+interface GigabitEthernet0/1
+ description Subnet B
+ ip address 192.168.100.94 255.255.255.224
+ duplex auto
+ speed auto
+ ipv6 address FE80::1 link-local
+ ipv6 address 2001:DB8:ACAD:B::1/64
+ no shutdown
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+ shutdown
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+control-plane
+!
+!
+banner motd ^CUnauthorized Access is Prohibited!^C
+!
+line con 0
+ password 7 094F471A1A0A121C1B0D1739
+ login
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ password 7 060506324F411F0D1C0713181F
+ login local
+ transport input ssh
+line vty 5 15
+ password 7 060506324F411F0D1C0713181F
+ login local
+ transport input ssh
+!
+scheduler allocate 20000 1000
+!
+end
+
+!! NETLAB+ saved configuration: time="2018-12-02 02:25:57 UTC" device="S1" hardware="C2960" reservation="299"
+!
+! Last configuration change at 00:30:43 UTC Mon Mar 1 1993
+!
+version 15.0
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname S1
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 4 pz9A9n/f8wxdG3e1kEn8T6zR/eMGkCmgWdoDscKwgGA
+!
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ no shutdown
+!
+interface FastEthernet0/2
+ no shutdown
+!
+interface FastEthernet0/3
+ no shutdown
+!
+interface FastEthernet0/4
+ no shutdown
+!
+interface FastEthernet0/5
+ no shutdown
+!
+interface FastEthernet0/6
+ no shutdown
+!
+interface FastEthernet0/7
+ no shutdown
+!
+interface FastEthernet0/8
+ no shutdown
+!
+interface FastEthernet0/9
+ no shutdown
+!
+interface FastEthernet0/10
+ no shutdown
+!
+interface FastEthernet0/11
+ no shutdown
+!
+interface FastEthernet0/12
+ no shutdown
+!
+interface FastEthernet0/13
+ no shutdown
+!
+interface FastEthernet0/14
+ no shutdown
+!
+interface FastEthernet0/15
+ no shutdown
+!
+interface FastEthernet0/16
+ no shutdown
+!
+interface FastEthernet0/17
+ no shutdown
+!
+interface FastEthernet0/18
+ no shutdown
+!
+interface FastEthernet0/19
+ no shutdown
+!
+interface FastEthernet0/20
+ no shutdown
+!
+interface FastEthernet0/21
+ no shutdown
+!
+interface FastEthernet0/22
+ no shutdown
+!
+interface FastEthernet0/23
+ no shutdown
+!
+interface FastEthernet0/24
+ no shutdown
+!
+interface GigabitEthernet0/1
+ no shutdown
+!
+interface GigabitEthernet0/2
+ no shutdown
+!
+interface Vlan1
+ ip address 192.168.100.93 255.255.255.224
+ no shutdown
+!
+ip default-gateway 192.168.100.94
+ip http server
+ip http secure-server
+!
+!
+line con 0
+ password ciscoconpass
+ login
+line vty 0 4
+ password ciscovtypass
+ login
+line vty 5 15
+ password ciscovtypass
+ login
+!
+end

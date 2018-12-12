@@ -1,0 +1,14 @@
+What is the last successful IPv4 address that was reached?: 10.10.1.97
+What is the last successful IPv4 address that was reached?:  10.10.1.17
+What is the other? 10.10.1.6
+What are they?  10.10.1.6/32 and 10.10.1.4/30
+Repeat step 2e to 2g with R3 and record the answers here: 10.10.1.10, 10.10.1.8/30, and 10.10.1.10/32
+What is the error? The Serial 0/0/0 interface of R2 is configured to the wrong IP
+What solution would you propose to correct the problem?: Reconfigure the Serial interface to 10.10.1.5
+Is the problem resolved?: Yes
+What is the last successful IPv6 address that was reached?: 2001:DB8:1:3::2
+What is the last successful IPv6 address that was reached?: No IPv6 address was reached
+Is there a discrepancy?: Indeed
+What is the error?: PC4's default gateway is configured incorrectly
+What solution would you propose to correct the problem?: Configure PC4's default gateway to FE80::3
+Is the problem resolved? Yes

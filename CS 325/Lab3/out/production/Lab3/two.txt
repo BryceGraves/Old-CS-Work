@@ -1,0 +1,5 @@
+a) Randomly shuffle the attendees
+b) Linearly distribute the attendees into groups while keeping track of group totals
+c) Calculate average group ability = totalAbility / (totalNumber / 7)
+d) Perform switches between groups outside of the group ability +- 3 or those on opposite sides of the ability average.
+e) Then order them from weakest to strongest to fulfil the second objective.

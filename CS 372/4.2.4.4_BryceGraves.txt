@@ -1,0 +1,6 @@
+Questions:
+1: 2 wires
+2: Configuration Terminal
+3: You need a cable for sending and a cable for receiving
+4: It's indicating the wireless network
+5: It is unrackable

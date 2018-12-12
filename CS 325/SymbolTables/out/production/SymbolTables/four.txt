@@ -1,0 +1,2 @@
+The height of the tree becomes smaller after deleting half of the nodes of the tree and re-adding them when the tree is smaller.
+Once the tree gets larger the height of the tree is greater after the delete and repopulate.

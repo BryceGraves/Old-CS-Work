@@ -1,0 +1,3 @@
+The clerk should use Selection sort for sorting the crates. This fits within the bounds of the problem because in order
+to complete one swap you can pull the higher one to the holding space, then pull the lower correct box from it's spot and place
+it where the first one came from. Then just fit the one in the holding space to the new opening.

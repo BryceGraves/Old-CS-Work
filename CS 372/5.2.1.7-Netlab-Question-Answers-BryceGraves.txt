@@ -1,0 +1,36 @@
+PC-A MAC Address: 00:50:56:99:FA:B6
+PC-B MAC Address: 00:50:56:99:4D:B5
+S1 Fast Ethernet 0/1 MAC Address: 00:1b:0d:9b:a6:81
+S2 Fast Ethernet 0/1 MAC Address: 00:18:b9:db:b2:01
+Are there any MAC addresses recorded in the MAC address table? Yes, all other MAC addresses besides S2 listed above are in the table.
+
+What MAC addresses are recorded in the table? To which switch ports are they mapped and to which
+devices do they belong? Ignore MAC addresses that are mapped to the CPU.: S1->mapped to port->Fa0/1, PC-A->mapped to port->Fa0/1, PC-B->mapped to port->Fa0/18
+
+If you had not previously recorded MAC addresses of network devices in Step 1, how could you tell which
+devices the MAC addresses belong to, using only the output from the show mac address-table
+command? Does it work in all scenarios?: Using the ports you can identify which network device the MAC address belongs to. This does not work if there are multiple MAC addresses mapped to the same port.
+
+Quickly type the show mac address-table command again. Does the MAC address table have any
+addresses in it for VLAN 1? Are there other MAC addresses listed?: only CPU based MAC addresses are listed
+
+Wait 10 seconds, type the show mac address-table command, and press Enter. Are there new
+addresses in the MAC address table?: Yes the MAC addresses mapped to port Fa0/1
+
+From PC-B, open a command prompt and type arp -a. Not including multicast or broadcast addresses,
+how many device IP-to-MAC address pairs have been learned by ARP?: 2 have been learned
+
+From PC-B command prompt, ping PC-A, S1, and S2. Did all devices have successful replies?: Only PC-A returned successful replies.
+
+From S2, enter the show mac address-table command. Has the switch added additional MAC
+addresses to the MAC address table? If so, which addresses and devices?: There are no extra devices on the list compared to when we first populated it before clearing it in step 3.
+
+From PC-B, open a command prompt and retype arp -a. Does the PC-B ARP cache have additional
+entries for all network devices that were sent pings?: It does not.
+
+Reflection
+On Ethernet networks, data is delivered to devices by their MAC addresses. For this to happen, switches and
+PCs dynamically build ARP caches and MAC address tables. With only a few computers on the network this
+process seems fairly easy. What might be some of the challenges on larger networks?
+
+Answer: Since switch MAC address-tables do not check the validity of their IP to MAC pairs it is possible for the ARP broadcasts to cause broadcast distortions resulting in incorrect pairs.

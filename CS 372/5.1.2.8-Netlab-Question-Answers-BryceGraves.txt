@@ -1,0 +1,18 @@
+Were the pings successful? Explain. The pings were not successful because the switch isn't configured yet.
+Ping the switch from PC-A. Were the pings successful? The pings were successful
+What is the OUI portion of the MAC address for this device? 99-FA-B6
+What is the serial number portion of the MAC address for this device? 00-50-56
+Identify the name of the vendor that manufactured the NIC of PC-A.: Company:VMware, Inc. Address:PALO ALTO, CA, 94304, UNITED STATES
+What is the MAC address for VLAN 1 on S1? 001b.0d9b.a6c0
+What is the MAC serial number for VLAN 1? 00:1B:0D
+What is the OUI for VLAN 1? 9b:a6:c0
+Based on this OUI, what is the name of the vendor? CISCO SYSTEMS, INC.
+What does bia stand for? Burned in Address
+Why does the output show the same MAC address twice? Because the first is the user configured MAC while the second is the Burned in MAC that cannot be changed.
+What Layer 2 addresses are displayed on S1? 001b.0d9b.a6c0 and 0050.5699.fab6
+What Layer 3 addresses are displayed on S1? 192.168.1.1 and 192.168.1.3
+Did the switch display the MAC address of PC-A? If you answered yes, what port was it on? Yes, port Fa0/6
+Reflection
+1. Can you have broadcasts at the Layer 2 level? If so, what would the MAC address be?
+Yes, you can have broadcasts at layer to with the MAC address of ff:ff:ff:ff:ff:ff
+2. It is easier to find a computer using it's mac address, plus it also contains relevant information about said computer.

@@ -1,0 +1,172 @@
+!! NETLAB+ saved configuration: time="2018-12-02 03:36:28 UTC" device="S1" hardware="C3560" reservation="301"
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname S1
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$3xFe$2P04tDNhwmNjmslveoxNB1
+!
+username SSHadmin secret 5 $1$Bp1G$UK9wOV0CwMBCq/aRKJ1cN/
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip domain-name CCNA-lab.com
+!
+!
+login block-for 30 attempts 2 within 120
+!
+!
+crypto pki trustpoint TP-self-signed-1183903488
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1183903488
+ revocation-check none
+ rsakeypair TP-self-signed-1183903488
+!
+!
+crypto pki certificate chain TP-self-signed-1183903488
+ certificate self-signed 01
+  3082023F 308201A8 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31313833 39303334 3838301E 170D3933 30333031 30303030 
+  35365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 31383339 
+  30333438 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100EEDB A410D99D FF3ED84A FC22F500 EA1574A4 D708CDEF 3D616581 04D6252E 
+  7CBE8DFB B829D3F3 147FD735 907A0A92 6D5928A2 AB371A76 5670815E 82820593 
+  D82BE22A 43696C52 2A0ED98F F7A1FBC2 CD521B3E 325C60F4 E4184047 41D0FD65 
+  4B6229BA 6E350C8F 61793410 88E53B0F F68C595D AB48BB1B 00C92E52 DA4034E8 
+  64D30203 010001A3 67306530 0F060355 1D130101 FF040530 030101FF 30120603 
+  551D1104 0B300982 07537769 7463682E 301F0603 551D2304 18301680 145D7C65 
+  36786C2F E81B094E 35784F74 113285B6 94301D06 03551D0E 04160414 5D7C6536 
+  786C2FE8 1B094E35 784F7411 3285B694 300D0609 2A864886 F70D0101 04050003 
+  818100B0 EC6CEC4D 396AADE4 09B4DD59 2A54953D 8967E20D F064A1AF D1926351 
+  4A227AC1 BAE950E6 BE2F8005 147FF617 A30A4D1F F2AE91BC C31D784D EFEA2938 
+  C64B64FC E3D5DB19 B84A2AAA 2C6AEEF3 76C6DB45 6D55AFD6 84D79EAF 585F94BF 
+  911BC053 071BD20E F5C65C44 CF67D0CA F817B1DA 06A3A22D 0BEE1490 1E3B9A9A 5A59DF
+  quit
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+interface FastEthernet0/1
+ shutdown
+!
+interface FastEthernet0/2
+ shutdown
+!
+interface FastEthernet0/3
+ shutdown
+!
+interface FastEthernet0/4
+ shutdown
+!
+interface FastEthernet0/5
+ no shutdown
+!
+interface FastEthernet0/6
+ no shutdown
+!
+interface FastEthernet0/7
+ shutdown
+!
+interface FastEthernet0/8
+ shutdown
+!
+interface FastEthernet0/9
+ shutdown
+!
+interface FastEthernet0/10
+ shutdown
+!
+interface FastEthernet0/11
+ shutdown
+!
+interface FastEthernet0/12
+ shutdown
+!
+interface FastEthernet0/13
+ shutdown
+!
+interface FastEthernet0/14
+ shutdown
+!
+interface FastEthernet0/15
+ shutdown
+!
+interface FastEthernet0/16
+ shutdown
+!
+interface FastEthernet0/17
+ shutdown
+!
+interface FastEthernet0/18
+ shutdown
+!
+interface FastEthernet0/19
+ shutdown
+!
+interface FastEthernet0/20
+ shutdown
+!
+interface FastEthernet0/21
+ shutdown
+!
+interface FastEthernet0/22
+ shutdown
+!
+interface FastEthernet0/23
+ shutdown
+!
+interface FastEthernet0/24
+ shutdown
+!
+interface GigabitEthernet0/1
+ shutdown
+!
+interface GigabitEthernet0/2
+ shutdown
+!
+interface Vlan1
+ ip address 192.168.1.11 255.255.255.0
+ no shutdown
+!
+ip default-gateway 192.168.1.1
+ip classless
+ip http server
+ip http secure-server
+!
+!
+!
+!
+!
+banner motd ^CUnauthorized Access is Prohibited^C
+!
+line con 0
+ password cisco
+ login
+line vty 0 4
+ password cisco
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+end
+
+

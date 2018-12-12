@@ -1,0 +1,20 @@
+Which command displays the statistics for all interfaces configured on a router? show interfaces
+Which command displays the information about the Serial 0/0/0 interface only? show interface serial 0/0/0
+What is the IP address configured on R1? 209.165.200.225/30
+What is the bandwidth on the Serial 0/0/0 interface? 1544 kbits
+What is the IP address on R1? There is no IP address configured on the GigabitEthernet 0/0 interface.
+What is the MAC address of the GigabitEthernet 0/0 interface? 000d.bd6c.7d01
+What is the bandwidth on the GigabitEthernet 0/0 interface? 1 gbits
+How many serial interfaces are there on R1 and R2? 2 serial interfaces.
+How many Ethernet interfaces are there on R1 and R2? R1 has 6 Ethernet interfaces and R2 has 2 Ethernet interfaces.
+Are all the Ethernet interfaces on R1 the same? If no, explain the difference(s)? There are 2 Gigabit Ethernet interfaces and 4 Fast Ethernet interfaces. The Gigabit interface can support speeds 1,000 bits faster than the Fast Ethernet interface.
+How many connected routes are there (uses the C code)? 1
+Which route is listed? 209.165.200.224/30
+How does a router handle a packet destined for a network that is not listed in the routing table? If a network is not listed, the packet will be dropped.
+How many interfaces on R1 and R2 are configured with IP addresses and in the “up” and “up” state? 3
+What part of the interface configuration is NOT displayed in the command output? Subnet mask
+What commands can you use to verify this part of the configuration? show run, show interfaces, and show ip protocols
+How many connected routes (uses the C code) do you see on each router? 3
+How many EIGRP routes (uses the D code) do you see on each router? 2
+If the router knows all the routes in the network, then the number of connected routes and dynamically learned routes (EIGRP) should equal the total number of LANs and WANs. How many LANs and WANs are in the topology? 5
+Does this number match the number of C and D routes shown in the routing table? Yes, they match. And the pings from PC1 to PC4 and from R2 and PC4 work.

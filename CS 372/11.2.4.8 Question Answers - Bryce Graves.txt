@@ -1,0 +1,20 @@
+What does the 2 within 120 mean in the above command?: If there are two login attempts within 120 seconds
+What does the block-for 30 mean in the above command?: Block for 30 seconds
+Does R1 accept the Telnet connection? Explain.: It does not, we enabled only SSH connections
+Does R1 accept the SSH connection?: Yep
+What happened after you failed to login the second time?: I am able to attemp a theird time, but upon entry the program closes meaning the router is blocking connections.
+After you successfully logged in, what was displayed?: The banner message
+If you mistype this password, are you disconnected from your SSH session after two failed attempts
+within 120 seconds? Explain.: This is the result of the "login block-for 30 attempts 2 within 120" command.
+Did the banner appear after you successfully logged in?: Yep
+
+Reflection
+1. The password cisco command was entered for the console and VTY lines in your basic configuration in Part
+	1. When is this password used after the best practice security measures have been applied?
+
+The first password is no longer used after the new ones were added. Even though the original password is still present it is disabled once the login local command is issued.
+
+2. Are preconfigured passwords shorter than 10 characters affected by the security passwords min-length 10
+command.
+
+Nope, passwords that are configured before the password limit is added are not subject to this limitation. Though if they are reconfigured they must be 10 characters in length.
