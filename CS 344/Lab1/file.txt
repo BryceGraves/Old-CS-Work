@@ -1,0 +1,26 @@
+ 13:55:37 up 21 days, 22:43, 24 users,  load average: 2.19, 2.10, 1.98
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+gayk     pts/2    flip1.engr.orego Mon16   20:46m  0.05s  0.00s tmux
+sabbatiw pts/3    flip1.engr.orego 12:14   30:25   0.28s  0.28s -bash
+gabriemi pts/6    10-251-66-60.wir 13:39    1:37   0.10s  0.05s bash
+zhangdi  pts/9    10-197-33-92.sds 10:40    1:56m  0.54s  0.54s -bash
+premere  pts/11   10-197-33-89.sds 10:39    1:57m  0.18s  0.18s -tcsh
+pavlovic pts/12   flip1.engr.orego Mon22   13:28m  0.24s  0.24s -tcsh
+chaneyr  pts/14   flip3.engr.orego 13:55    1.00s  0.07s  0.01s w
+premere  pts/17   10-197-33-89.sds 11:57    1:57m  0.12s  0.12s -tcsh
+meynm    pts/18   flip2.engr.orego 17Nov18 16days  0.07s  0.07s -bash
+gaglianc pts/21   10-249-104-30.wi 11:16    1:22m  0.41s  0.41s -bash
+mitud    pts/22   10-197-36-148.sd 12:58   14:49   0.12s  0.12s -tcsh
+lawsonty pts/25   flip3.engr.orego 11:54   36:09   0.21s  0.21s -bash
+brewsteb pts/30   ben-centos.eecs. 27Nov18  5:58m  4:36   4:36  top
+stubblec pts/32   10-249-8-240.wir 13:40   14:25   0.06s  0.06s -bash
+kindys   pts/34   flip1.engr.orego 13:03   50:09   0.16s  0.16s -bash
+millelog pts/35   als3132-pc1.cgrb 10:04    3:47m  0.19s  0.19s -bash
+wanghuah pts/38   128-193-252-235. 13:29    7:45   0.09s  0.09s -bash
+schenkmi pts/43   10-197-35-238.sd 12:44   25:53   0.24s  0.24s -bash
+shahbaar pts/44   10-249-177-16.wi 13:15   20:17   0.16s  0.16s -bash
+gayk     pts/79   flip1.engr.orego 19Nov18 14days  0.05s  0.00s tmux
+hannajos pts/88   dear203-04.engr. Sun19   42:26m  2:50   0.17s -tcsh
+gayk     pts/95   flip1.engr.orego 28Nov18  6days  0.05s  0.00s tmux
+lawsonty pts/123  flip3.engr.orego Fri20    3days  0.63s  0.20s -bash
+lawsonty pts/201  flip3.engr.orego Thu11    4days  1.60s  1.60s -bash
