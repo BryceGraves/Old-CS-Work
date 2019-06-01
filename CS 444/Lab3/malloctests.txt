@@ -1,0 +1,259 @@
+$ malloctests
+malloctests starting
+base: 0x4000
+*** Begin 1
+      Basic reset
+  ptr : 0x4000
+  ptr : 0x4000
+*** End 1
+*** Begin 2
+      zero bytes
+*** End 2
+*** Begin 3
+      10 bytes
+*** End 3
+*** End 4
+*** Begin 5
+      5 allocs
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		30		10		58		in use	 
+  Total bytes used												30		10		58
+  Used blocks: 1  Free blocks: 0  Min heap: 0x4000    Max heap: 0x403A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x0		0x4000		0x4056		58		86		30		30		58		in use	 
+  Total bytes used												60		40		116
+  Used blocks: 2  Free blocks: 0  Min heap: 0x4000    Max heap: 0x4074
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x0		0x403A		0x4090		116		144		50		50		78		in use	 
+  Total bytes used												110		90		194
+  Used blocks: 3  Free blocks: 0  Min heap: 0x4000    Max heap: 0x40C2
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x0		0x4074		0x40DE		194		222		70		70		98		in use	 
+  Total bytes used												180		160		292
+  Used blocks: 4  Free blocks: 0  Min heap: 0x4000    Max heap: 0x4124
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		250		410
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0x419A
+  ptr1 : 0x401C
+  ptr2 : 0x4056
+  ptr3 : 0x4090
+  ptr4 : 0x40DE
+  ptr5 : 0x4140
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		250		410
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0x419A
+*** End 5
+*** Begin 6
+      5 allocs 3 frees
+  ptr1 : 0x401C
+  ptr2 : 0x4056
+  ptr3 : 0x4090
+  ptr4 : 0x40DE
+  ptr5 : 0x4140
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		250		410
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		0		58		free  	*
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		0		78		free  	*
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		0		118		free  	*
+  Total bytes used												270		100		410
+  Used blocks: 2  Free blocks: 3  Min heap: 0x4000    Max heap: 0x419A
+heap lost blocks
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  Total bytes lost												100		100		156
+*** End 6
+*** Begin 7
+      5 allocs 2 frees
+  ptr1 : 0x401C
+  ptr2 : 0x4056
+  ptr3 : 0x4090
+  ptr4 : 0x40DE
+  ptr5 : 0x4140
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		250		410
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		0		58		free  	*
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		0		98		free  	*
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		150		410
+  Used blocks: 3  Free blocks: 2  Min heap: 0x4000    Max heap: 0x419A
+heap lost blocks
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes lost												170		150		254
+*** End 7
+*** Begin 8
+      begin coalesce
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		30		58		in use	 
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		70		98		in use	 
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		250		410
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x403A		0x0		0x401C		0		28		30		10		58		in use	 
+  1		0x403A		0x4074		0x4000		0x4056		58		86		30		0		58		free  	*
+  2		0x4074		0x40C2		0x403A		0x4090		116		144		50		50		78		in use	 
+  3		0x40C2		0x4124		0x4074		0x40DE		194		222		70		0		98		free  	*
+  4		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												270		150		410
+  Used blocks: 3  Free blocks: 2  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x4074		0x0		0x401C		0		28		88		0		116		free  	*
+  1		0x4074		0x40C2		0x4000		0x4090		116		144		50		50		78		in use	 
+  2		0x40C2		0x4124		0x4074		0x40DE		194		222		70		0		98		free  	*
+  3		0x4124		0x0		0x40C2		0x4140		292		320		90		90		118		in use	 
+  Total bytes used												298		140		410
+  Used blocks: 2  Free blocks: 2  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x4074		0x0		0x401C		0		28		88		0		116		free  	*
+  1		0x4074		0x40C2		0x4000		0x4090		116		144		50		50		78		in use	 
+  2		0x40C2		0x0		0x4074		0x40DE		194		222		188		0		216		free  	*
+  Total bytes used												326		50		410
+  Used blocks: 1  Free blocks: 2  Min heap: 0x4000    Max heap: 0x419A
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		382		0		410		free  	*
+  Total bytes used												382		0		410
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x419A
+heap lost blocks
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  *** No leaks found!!! That does NOT mean no leaks are possible. ***
+*** End 8
+*** Begin 9
+      memset
+  ptr1 : 0x401C
+  ptr2 : 0x4420
+  ptr3 : 0x4FF4
+  ptr4 : 0x6398
+  ptr5 : 0x7F0C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x4404		0x0		0x401C		0		28		1000		1000		1028		in use	 
+  1		0x4404		0x4FD8		0x4000		0x4420		1028		1056		3000		3000		3028		in use	 
+  2		0x4FD8		0x637C		0x4404		0x4FF4		4056		4084		5000		5000		5028		in use	 
+  3		0x637C		0x7EF0		0x4FD8		0x6398		9084		9112		7000		7000		7028		in use	 
+  4		0x7EF0		0x0		0x637C		0x7F0C		16112		16140		10000		10000		10028		in use	 
+  Total bytes used												26000		26000		26140
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0xA61C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x4404		0x0		0x401C		0		28		1000		1000		1028		in use	 
+  1		0x4404		0x4FD8		0x4000		0x4420		1028		1056		3000		3000		3028		in use	 
+  2		0x4FD8		0x637C		0x4404		0x4FF4		4056		4084		5000		5000		5028		in use	 
+  3		0x637C		0x7EF0		0x4FD8		0x6398		9084		9112		7000		7000		7028		in use	 
+  4		0x7EF0		0x0		0x637C		0x7F0C		16112		16140		10000		10000		10028		in use	 
+  Total bytes used												26000		26000		26140
+  Used blocks: 5  Free blocks: 0  Min heap: 0x4000    Max heap: 0xA61C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		26112		0		26140		free  	*
+  Total bytes used												26112		0		26140
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0xA61C
+*** End 9
+*** Begin 10
+      split and coalesce
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		10000		10000		10028		in use	 
+  Total bytes used												10000		10000		10028
+  Used blocks: 1  Free blocks: 0  Min heap: 0x4000    Max heap: 0x672C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		10000		0		10028		free  	*
+  Total bytes used												10000		0		10028
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x672C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x4080		0x0		0x401C		0		28		100		100		128		in use	 
+  1		0x4080		0x0		0x4000		0x409C		128		156		9872		0		9900		free  	*
+  Total bytes used												9972		100		10028
+  Used blocks: 1  Free blocks: 1  Min heap: 0x4000    Max heap: 0x672C
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		10000		0		10028		free  	*
+  Total bytes used												10000		0		10028
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x672C
+heap lost blocks
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  *** No leaks found!!! That does NOT mean no leaks are possible. ***
+*** End 10
+*** Begin 11
+      stress 1
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		8932		0		8960		free  	*
+  Total bytes used												8932		0		8960
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x6300
+*** End 11
+*** Begin 12
+      stress 2
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		8932		0		8960		free  	*
+  Total bytes used												8932		0		8960
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x6300
+*** End 12
+*** Begin 13
+      stress 3
+heap map
+  blk no 	block add 	next add  	prev add  	data add  	blk off  	dat off  	capacity 	bytes usd	blk size 	status   
+  0		0x4000		0x0		0x0		0x401C		0		28		8932		0		8960		free  	*
+  Total bytes used												8932		0		8960
+  Used blocks: 0  Free blocks: 1  Min heap: 0x4000    Max heap: 0x6300
+*** End 13
+
+
+WoooooooHooooooo!!! All tests done and you survived.
