@@ -15,7 +15,7 @@ OBJS = \
 	picirq.o\
 	pipe.o\
 	proc.o\
-	rand.o\
+	sem.o\
 	sleeplock.o\
 	spinlock.o\
 	string.o\
@@ -33,7 +33,7 @@ OBJS = \
 # TOOLPREFIX = i386-jos-elf
 
 # Using native tools (e.g., on X86 Linux)
-#TOOLPREFIX = 
+#TOOLPREFIX =
 
 # Try to infer the correct TOOLPREFIX if not set
 ifndef TOOLPREFIX
@@ -78,10 +78,15 @@ AS = $(TOOLPREFIX)gas
 LD = $(TOOLPREFIX)ld
 OBJCOPY = $(TOOLPREFIX)objcopy
 OBJDUMP = $(TOOLPREFIX)objdump
-DEFINES = -DMY_MALLOC -DPROC_TIME -DLOTTERY_SCHED
+DEFINES = -DMY_MALLOC
+DEFINES += -DTRUNC_FILE
+DEFINES += -DPROC_TIME
+DEFINES += -DD_TICK
+DEFINES += -DLOTTERY_SCHED
+DEFINES += -DKTHREADS
 CFLAGS = $(DEFINES) -fno-pic -static -fno-builtin -fno-strict-aliasing -O2 -Wall -MD -ggdb -m32 -Werror -fno-omit-frame-pointer
 CFLAGS += $(shell $(CC) -fno-stack-protector -E -x c /dev/null >/dev/null 2>&1 && echo -fno-stack-protector)
-ASFLAGS = $(DEFINES) -m32 -gdwarf-2 -Wa,-divide
+ASFLAGS = -m32 -gdwarf-2 -Wa,-divide
 # FreeBSD ld wants ``elf_i386_fbsd''
 LDFLAGS += -m $(shell $(LD) -V | grep elf_i386 2>/dev/null | head -n 1)
 
@@ -177,17 +182,14 @@ UPROGS=\
 	_kill\
 	_ln\
 	_ls\
-	_malloctests\
-	_mfork\
 	_mkdir\
-	_mult\
-	_nice\
-	_ps\
-	_renice\
 	_rm\
+	_semtest1\
+	_semtest2\
+	_semtest3\
 	_sh\
-	_sizeof\
 	_stressfs\
+	_usertests\
 	_wc\
 	_zombie\
 
@@ -196,7 +198,7 @@ fs.img: mkfs README $(UPROGS)
 
 -include *.d
 
-clean: 
+clean:
 	rm -f *.tex *.dvi *.idx *.aux *.log *.ind *.ilg \
 	*.o *.d *.asm *.sym vectors.S bootblock entryother \
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs \
@@ -226,9 +228,9 @@ QEMUGDB = $(shell if $(QEMU) -help | grep -q '^-gdb'; \
 	then echo "-gdb tcp::$(GDBPORT)"; \
 	else echo "-s -p $(GDBPORT)"; fi)
 ifndef CPUS
-CPUS := 1
+CPUS := 4
 endif
-QMEM = 1024
+QMEM = 512
 QEMUOPTS = -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp $(CPUS) -m $(QMEM) $(QEMUEXTRA)
 
 qemu: fs.img xv6.img
