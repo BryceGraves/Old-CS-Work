@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/first_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/first_name"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:textSize="24dp"
+    android:padding="24dp"
+  />
+
+  <EditText
+    android:id="@+id/name_input"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_marginHorizontal="40dp"
+    android:inputType="text"
+  />
+
+  <Button
+    android:id="@+id/mangle_nicely_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/mangle_nicely_button"
+    android:drawablePadding="4dp"
+  />
+
+  <Button
+      android:id="@+id/mangle_rudely_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/mangle_rudely_button"
+      android:drawablePadding="4dp"
+  />
+
+</LinearLayout>

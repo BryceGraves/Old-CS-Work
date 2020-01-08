@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">fixme3</string>
+
+    <string name="question_oregon">Bend is the capital of Oregon.</string>
+    <string name="question_beer">Bend is the beer capital of the world.</string>
+    <string name="question_canal">The Arnold Canal is in Deschutes County.</string>
+    <string name="question_columbia">The source of the Columbia River is Crater Lake.</string>
+    <string name="question_deschutes">The Deschutes River was named by French-Canadian fur trappers.</string>
+    <string name="question_lake">Crater Lake is the deepest lake in the world.</string>
+    <string name="question_pilot">Pilot Butte is the highest point in Oregon.</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+
+    <string name="prev_button">Prev</string>
+    <string name="next_button">Next</string>
+
+    <string name="correct_toast">Winner winner chicken dinner!</string>
+    <string name="incorrect_toast">Try again!</string>
+
+    <string name="next_button_content_desc">Move to next question</string>
+    <string name="previous_button_content_desc">Move to previous question</string>
+</resources>
