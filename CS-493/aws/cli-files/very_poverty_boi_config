@@ -1,0 +1,4 @@
+[profile default]
+source_profile = default
+region = us-east-1
+output = table

@@ -1,0 +1,176 @@
+-------------------
+Chapter 1 Exercises
+-------------------
+
+1.1
+---
+M: 0110110101100001011100100110100101101111 (mario)
+K: 1110100101100110001001100111010101110010
+C: 1000010000000111010101000001110000011101
+
+M: 0110110001110101011010010110011101101001 (luigi)
+K: 1110100101100110001001100111010101110010
+C: 1000010100010011010011110001001000011011
+
+1.2 TODO: finish this. Not sure if the eavesdrop alg is based on outcomes C that the eavesdropper can get or what they think they can get.
+---
+It depends on the rules of the system. If it is still assumed that the eavesdropper has 100% knowledge of the algs at work then claim 1.3 would then cover {0,1}^λ \ {0^λ} and still be the uniform distribution of it's outcomes.
+Otherwise it is no longer uniformly distributed since one outcome
+
+1.3
+---
+Stopped caring around here
+
+---------------------------
+Chapter 1 Test Notes Part 1
+---------------------------
+1.
+M: 11101010
+K: 10001001
+C: 01100011
+
+2.
+C: 00111010
+K: 10101000
+M: 10010010
+
+3.
+M: 00000111
+K: ????????
+C: 10010011
+
+K: 10010100
+
+4.
+M: 00001010
+K: ????????
+C: 10110001
+
+K: 10111011
+
+M: 11101011
+K: 10111011
+C: 01010000
+
+---------------------------
+Chapter 1 Test Notes Part 2
+---------------------------
+
+1. The security proof shows that the calling program can't compute the secret key k.
+False
+
+2. The calling program can force the library to use the same k value twice.
+True
+
+3. Suppose each bit of k is chosen to be 1 with probability 0.6 and 0 with probability 0.4 (instead of with equal probability). Then which of these is MOST likely output from EAVESDROP(0101)?
+1010
+
+------------------
+Chapter 1 Homework
+------------------
+
+Question 1
+----------
+C1: 1111100101111001110011000001011110000110
+C2: 1111101001100111110111010000100110001000
+
+Option 1: C1 = alpha and C2 = bravo
+
+M1: 0110000101101100011100000110100001100001
+K1: ????????????????????????????????????????
+C1: 1111100101111001110011000001011110000110
+
+Calculated K1
+K1: 1001100000010101101111000111111111100111
+
+M2: 0110001001110010011000010111011001101111
+K2: ????????????????????????????????????????
+C2: 1111101001100111110111010000100110001000
+
+Calculated K2
+K2: 1001100000010101101111000111111111100111
+
+Solving M2 with K1:
+M2: 0110001001110010011000010111011001101111
+K1: 1001100000010101101111000111111111100111
+O1: 1111101001100111110111010000100110001000
+
+Expected Output
+C2: 1111101001100111110111010000100110001000
+
+Actual Output
+O1: 1111101001100111110111010000100110001000
+
+Solving M1 with K2:
+M1: 0110000101101100011100000110100001100001
+K2: 1001100000010101101111000111111111100111
+O2: 1111100101111001110011000001011110000110
+
+Expected Output
+C1: 1111100101111001110011000001011110000110
+
+Actual Output
+O2: 1111100101111001110011000001011110000110
+
+They Match
+
+Option 2: C1 = delta and C2 = gamma
+
+M1: 0110010001100101011011000111010001100001
+K1: ????????????????????????????????????????
+C1: 1111100101111001110011000001011110000110
+
+Calculated K1
+K1: 1001110100011100101000000110001111100111
+
+M2: 0110011101100001011011010110110101100001
+K2: ????????????????????????????????????????
+C2: 1111101001100111110111010000100110001000
+
+Calculated K2
+K2: 1001110100000110101100000110010011101001
+
+They don't match let's double check them
+
+M1: 0110010001100101011011000111010001100001
+K1: 1001110100011100101000000110001111100111
+C1: 1111100101111001110011000001011110000110
+
+K1 Double Checked
+
+M2: 0110011101100001011011010110110101100001
+K2: 1001110100000110101100000110010011101001
+C2: 1111101001100111110111010000100110001000
+
+K2 Double Checked
+
+Option 1 is the correct option since the keys are the same.
+
+Question 2
+----------
+The flaw in the argument is about the eavesdropper not being able to get any information about m regardless of the context.
+The proofs say that when the eavesdropper gets m and c they cant get any information about m from c.
+This does not include when the eavesdropper has k, during which they can easily translate c to m.
+
+Question 3
+__________
+Given:
+Eavesdrop(M <- Z_n):
+  Z <-- Z_n
+  C := (K+M)%n
+  return c
+
+Possible outcomes for n=5 (t = total, % = mod of n)
+M: 0000011111222223333344444
+K: 1234512345123451234512345
+T: 1234523456345674567856789
+%: 1234023401340124012301234
+
+Totals:
+1 occurs 5 times
+2 occurs 5 times
+3 occurs 5 times
+4 occurs 5 times
+5 occurs 5 times
+
+It is uniformly distributed since PR is 1/|n|

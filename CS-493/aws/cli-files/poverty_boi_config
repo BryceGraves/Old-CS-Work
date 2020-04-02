@@ -1,0 +1,5 @@
+[profile default]
+source_profile = default
+role_arn = arn:aws:iam::576322095525:role/contractors
+region = us-east-1
+output = table

@@ -1,0 +1,261 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This is a description tehe"
+Resources:
+  iam60495b4:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: "CustomIAM"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "CreateCustomIAM"
+            Effect: "Allow"
+            Action:
+              - "iam:ListPolicies"
+              - "iam:ListRoles"
+              - "iam:ListUsers"
+              - "iam:ListGroups"
+              - "iam:ListVirtualMFADevices"
+            Resource: "*"
+      Roles:
+        - !Ref iam2bce32e
+
+  iame254457:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: "CustomCloudFormation"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "CreateCustomCloudFormation"
+            Effect: "Allow"
+            Action:
+              - "cloudformation:ListStacks"
+              - "cloudformation:ListStackResources"
+              - "cloudformation:GetTemplate"
+            Resource: "*"
+      Roles:
+        - !Ref iam2bce32e
+
+  iam5481b2f:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: "CustomDynamoDb"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "CreateCustomDynamoDb"
+            Effect: "Allow"
+            Action:
+              - "dynamodb:BatchGetItem"
+              - "dynamodb:ListGlobalTables"
+              - "dynamodb:ListTables"
+              - "dynamodb:DescribeGlobalTable"
+              - "dynamodb:GetItem"
+              - "dynamodb:Scan"
+              - "dynamodb:Query"
+              - "dynamodb:DescribeTimeToLive"
+              - "dynamodb:GetRecords"
+            Resource: "*"
+      Roles:
+        - !Ref iam2bce32e
+
+  iam93c83a1:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: "CustomBucketViewer"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "S3ListAllBuckets"
+            Effect: "Allow"
+            Action:
+              - "s3:ListAllMyBuckets"
+            Resource: "arn:aws:s3:::*"
+          - Sid: "S3ListBucket"
+            Effect: "Allow"
+            Action:
+              - "s3:ListBucket"
+            Resource: "arn:aws:s3:::bryce-graves"
+          - Sid: "S3GetObject"
+            Effect: "Allow"
+            Action:
+              - "s3:GetObject"
+            Resource: "arn:aws:s3:::bryce-graves/*"
+      Roles:
+        - !Ref iam2bce32e
+
+  iam1e0feea:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: "MusicAllyAWSManager"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "ManagedS3"
+            Effect: "Allow"
+            Action:
+              - "s3:*"
+            Resource: "*"
+          - Sid: "ManagedDynamoDb"
+            Effect: "Allow"
+            Action:
+              - "dynamodb:*"
+            Resource: "*"
+      Roles:
+        - !Ref iam8f8d7cb
+
+  iam2bce32e:
+    Type: "AWS::IAM::Role"
+    Properties:
+      RoleName: "contractors"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: "Allow"
+            Action: "sts:AssumeRole"
+            Principal:
+              AWS: "204087959985"
+            Condition: !Ref "AWS::NoValue"
+
+  s33e10f9c:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "bryce-graves"
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+
+  iam8f8d7cb:
+    Type: "AWS::IAM::Role"
+    Properties:
+      RoleName: "music-ally-service-role"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: "Allow"
+            Action:
+              - "sts:AssumeRole"
+            Principal:
+              Service:
+                - "ec2.amazonaws.com"
+
+  iama12b857:
+    Type: "AWS::IAM::InstanceProfile"
+    Properties:
+      InstanceProfileName: "music-ally-service"
+      Path: "/"
+      Roles:
+        - !Ref iam8f8d7cb
+
+  ec2c6b7a3f:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: "Server services security permissions"
+      GroupName: "music-ally-services"
+      VpcId: "vpc-12320668"
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 216.228.171.131/32
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
+          CidrIp: 0.0.0.0/0
+
+  ec22cfd223:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-0a887e401f7654935"
+      KeyName: "master-key"
+      SecurityGroupIds:
+        - !Ref ec2c6b7a3f
+      IamInstanceProfile: "music-ally-service"
+      InstanceType: "t2.micro"
+      Tenancy: "default"
+      Monitoring: false
+      DisableApiTermination: false
+      InstanceInitiatedShutdownBehavior: "stop"
+      CreditSpecification:
+        CPUCredits: "standard"
+      EbsOptimized: false
+      BlockDeviceMappings:
+        - DeviceName: "/dev/xvda"
+          Ebs:
+            VolumeSize: 8
+            DeleteOnTermination: true
+            VolumeType: "gp2"
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          sudo yum update -y
+          curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+          sudo yum install nodejs -y
+          curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+          sudo yum install yarn -y
+          sudo yum install git -y
+          git clone https://github.com/BryceGraves/music-ally-services.git
+          cd music-ally-services
+          yarn install && yarn start
+
+  dynamodb037a595:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: music
+      BillingMode: "PROVISIONED"
+      SSESpecification:
+        SSEEnabled: false
+      AttributeDefinitions:
+        - AttributeName: Genre
+          AttributeType: S
+        - AttributeName: Artist
+          AttributeType: S
+        - AttributeName: Album
+          AttributeType: S
+        - AttributeName: Song
+          AttributeType: S
+        - AttributeName: DatabasePath
+          AttributeType: S
+      KeySchema:
+        - AttributeName: Genre
+          KeyType: HASH
+        - AttributeName: DatabasePath
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      GlobalSecondaryIndexes:
+        - IndexName: ArtistIndex
+          KeySchema:
+            - AttributeName: Artist
+              KeyType: HASH
+            - AttributeName: Album
+              KeyType: RANGE
+          Projection:
+            ProjectionType: KEYS_ONLY
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+        - IndexName: AlbumIndex
+          KeySchema:
+            - AttributeName: Album
+              KeyType: HASH
+            - AttributeName: Song
+              KeyType: RANGE
+          Projection:
+            ProjectionType: KEYS_ONLY
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+        - IndexName: SongIndex
+          KeySchema:
+            - AttributeName: Song
+              KeyType: HASH
+            - AttributeName: DatabasePath
+              KeyType: RANGE
+          Projection:
+            ProjectionType: KEYS_ONLY
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
