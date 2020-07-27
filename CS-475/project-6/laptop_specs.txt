@@ -1,0 +1,32 @@
+Number of Platforms = 1
+Platform #0:
+	Name    = 'Intel Gen OCL Driver'
+	Vendor  = 'Intel'
+	Version = 'OpenCL 2.0 beignet 1.3'
+	Profile = 'FULL_PROFILE'
+	Number of Devices = 1
+	Device #0:
+		Type = 0x0004 = CL_DEVICE_TYPE_GPU
+		Device Vendor ID = 0x8086 (Intel)
+		Device Maximum Compute Units = 24
+		Device Maximum Work Item Dimensions = 3
+		Device Maximum Work Item Sizes = 512 x 512 x 512
+		Device Maximum Work Group Size = 512
+		Device Maximum Clock Frequency = 1000 MHz
+
+Device Extensions:
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_byte_addressable_store
+cl_khr_3d_image_writes
+cl_khr_image2d_from_buffer
+cl_khr_depth_images
+cl_khr_spir
+cl_khr_icd
+cl_intel_accelerator
+cl_intel_subgroups
+cl_intel_subgroups_short
+cl_khr_fp16
+

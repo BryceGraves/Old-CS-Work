@@ -1,0 +1,34 @@
+Number of Platforms = 1
+Platform #0:
+	Name    = 'Clover'
+	Vendor  = 'Mesa'
+	Version = 'OpenCL 1.1 Mesa 19.2.8'
+	Profile = 'FULL_PROFILE'
+	Number of Devices = 2
+	Device #0:
+		Type = 0x0004 = CL_DEVICE_TYPE_GPU
+		Device Vendor ID = 0x1002 (AMD)
+		Device Maximum Compute Units = 36
+		Device Maximum Work Item Dimensions = 3
+		Device Maximum Work Item Sizes = 256 x 256 x 256
+		Device Maximum Work Group Size = 256
+		Device Maximum Clock Frequency = 1290 MHz
+	Device #1:
+		Type = 0x0004 = CL_DEVICE_TYPE_GPU
+		Device Vendor ID = 0x1002 (AMD)
+		Device Maximum Compute Units = 36
+		Device Maximum Work Item Dimensions = 3
+		Device Maximum Work Item Sizes = 256 x 256 x 256
+		Device Maximum Work Group Size = 256
+		Device Maximum Clock Frequency = 1290 MHz
+
+Device Extensions:
+cl_khr_byte_addressable_store
+cl_khr_global_int32_base_atomics
+cl_khr_global_int32_extended_atomics
+cl_khr_local_int32_base_atomics
+cl_khr_local_int32_extended_atomics
+cl_khr_int64_base_atomics
+cl_khr_int64_extended_atomics
+cl_khr_fp64
+cl_khr_fp16
