@@ -1,0 +1,8 @@
+{
+  "short_name": "Free Time",
+  "name": "Free Time - Schedule Manager",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

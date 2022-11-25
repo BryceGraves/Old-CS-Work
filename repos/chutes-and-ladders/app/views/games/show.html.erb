@@ -1,0 +1,17 @@
+<%= global_header %>
+
+<h1>Game: <%= @game.name %></h1>
+
+<%=
+  if @game.players.size > 0
+    button_to "Play Game",
+    game_play_index_path(@game.id),
+    :method => :get
+  end
+%>
+
+<br />
+<%= scoreboard players: @game.players, title: "Current Standings" %>
+
+<br />
+<%= player_list game: @game, players: @game.players %>

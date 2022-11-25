@@ -1,0 +1,45 @@
+Consider "full life (sales) cycle".
+Consider how a customer will acquire the product.
+
+Consider the existing software functionality.
+
+******* WHAT IS MISSING FROM SCHEMA TO SERVE INFINITE NUMBER OF SCHOOLS?? ******
+
+- how does it work, technically? Be detailed
+    4 tables (entities)
+        - Activity
+            Things that occur on a date
+            Things user register for
+        - User
+            Abstracts different system users
+            - Role attribute
+                Admin
+                Staff
+                Student
+        - Registration
+        - Teacher
+            (Will get signed in as Staff)
+            Won't really have any registrations
+            Decouples teacher from user accounts
+        
+    *** Do we need a "schools" table? ***
+    *** Put "changed_by" in the registration table? 
+            No, change relationship between user/registration for Participation
+                Add Teacher/Registration relationship for Registered ***
+    *** Attendance attribute is in registration ***
+
+    Many-To-Many Relationships
+        - Activity and User through Registration
+           ____________          ________________          ________
+           | Activity | ---<>--- | Registration | ---<>--- | User | ---- (role) --> Admin
+           ____________          ________________          ________                 Staff
+                                                             |                      Student
+                                                             <>
+                                                             |
+                                                         ___________     
+                                                         | Teacher |
+                                                         ___________
+            
+
+Consider the version for the target product.
+- what will it take to get the current software to the "product state"?

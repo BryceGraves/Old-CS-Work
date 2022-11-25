@@ -1,0 +1,20 @@
+-------------------------
+|  Acquiring Customers  |
+-------------------------
+
+Cold Calling Schools
+--------------------
+1. Cold call school
+2. Point them towards our website to buy the product
+3. Tell them the URL of the store
+4. This URL is a variation of the active product url store. or shop.
+4.1 The website is a variation on that of what their school's url will
+    be which will make it magic and familiar
+5. When they arrive on the landing page we sell the concepts presented on the landing page
+6. Ask them if they want to demo of the product on the website
+7. The customer is presented with a page to input their payment information
+8. The page states that the cost is $1000 annually
+9. The customer verifies they have available funds in their budget to make the purchase
+10. The customer inputs their payment information and selects pay now.
+11. Our automated back end spins up a new environment and url for the new customer
+12. The customer logs on to their new website

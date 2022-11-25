@@ -1,0 +1,199 @@
+-----------
+|  Notes  |
+-----------
+
+-Middle school electives are optional classes for students; 
+pupils must complete a certain number of elective courses, 
+but they can choose from a range of subjects.
+
+One Sentence Pitch
+- Simple scheduling software for students to control exploratory
+learning, without administrative work.
+- An elective software for students and educators alike which
+enables students to easily pick electives and educators to 
+spend less time on paperwork and more time with students.
+
+10+ Question for Principle Stephen Duval (from Ben)
+
+- ACROSS THE BOARD EVERYONE AT THE SCHOOL THINKS FLEX TIME HELPS THE KIDS!!!!
+
+1.  How did you schedule before this software?
+    - Google
+    1b. How long did this process take?
+    - Student - 30 seconds
+    - Staff - 20 min
+    - Principle - 40-60 min (had to manually reset daily)
+    1c. Do you find this new way more productive?
+    - Yes
+2.  What do you call your electives? (internally, specific term)
+    - Mountain time (Flex time)
+3.  How long have you had an electives program?
+4.  Do the teachers enjoy using the app?
+    - yes
+5.  Do the students enjoy using the app?
+    - yes
+6.  Does higher level administration enjoy using the app?
+    - yes
+7.  Have you noticed a measurable change in productivity? (+ or -)
+    - YES!!!
+    - Academics: track struggling students (D and F) through year and monitor progress
+        This has improved as flex time is assigned
+        Progress monitored over 6 weeks
+    - Behavior
+8.  Do the teachers/students feel like they have more time to 
+    with each other now?
+9.  How did you find out about this app?
+    - Other principle
+10. How much budget do you have annually?
+    - Annual subscription works the best
+    - $1000 for this annually
+    - If over $10k district must approve
+11. What is your budget?
+    - Based of student demographics, and same formula applied to all schools
+    - School improvement fund (discretionary)
+        - $15-20k
+    - Alternative budgets (for historically struggling students)
+        - $8-10k
+    - Principle budget (Classrooms, repairs, maintainers)
+        - $30k
+12. How much of budget is allocated per student?
+    - See above
+13. How often do you comminute with other principles from other schools?
+    - Monthly
+    13b. How does this communication occur?
+    - School Community: Monthly administrator gathering. Talk about stuff.
+    - Parent Community: Clear advertising of the time and how it supports the students.
+        Help prioritize academic over clubs
+14. Have you communicated with the district about this app?
+    - Yes
+        - Executive Director is in support
+        - He has talked with other administrators
+15. Would you be willing to recommend this app to others?
+    - YES.
+    15b. Is there anyone you would recommend this to right now?
+        - YES
+    15c. Would you still recommend if it were a paid subscription service?
+        - YES
+16. How much would you be willing to pay for this service per month?
+    - up to $1000 yearly
+17. What is one new feature you would like to see?
+    - Attendance added was a big plus
+    - Nothing yet since attendance was just added
+18. Has using this software created any NEW problems?
+    - None that he can think of
+19. Would it beneficial if this software encompassed all class scheduling 
+    and not just electives?
+    - Could be, but for groups of learning (based of activity and learning)
+    - Keeping it off curriculum allows principle to use discretionary spending rather than vote from district
+20. Do you seeing yourself using this product for a long time?
+21. Would you be comfortable leaving payment information on a website
+    to allow for automatic re-subscription?
+
+Questions from Tom
+1. What were you doing before this program? - dup
+2. How long did it take you to do it? - added
+3. Is this program better than what you were doing before? - added
+4. Would you recommend it to others? - dup
+5. How do you communicate with other principals? - dup
+
+Questions from class
+- Currently in really great spot
+- Took 30 min to sign everyone up
+- Used free google addons with google sheets
+    - This did not exactly meet needs looking for
+    - need flexible learning times. Restrictions on them signing up (on same program). 
+    - Flexible, Reliable, limit per class, know where students are when for safety.
+- Other schools are all own community and needs to be met.
+    - Flexibility when designing a program
+    - They use grading system for students to learn from mistakes and correct and resubmit work
+- Could use for core subjects
+- Daily student use: 30 sec, staff: 5-10 min
+- Highest Priority: help academically struggling students
+- Other software meets needs, and how well, and cost comparison
+- Biggest Pain Point
+    Student responsibility
+        Going to right spot
+        Signing up for correct stuff.
+- "For teachers TIME is the magical 4 letter word." Stephen Duval
+- Hardest day-to-day part of the job
+    - Adults
+    - How hard it can be to move adults (in regards to a direction)
+    - Adults have a very fixed mindset, resistant to change
+- Kids motivate Principle at work
+    - Seeing kids engaged
+- Recognition
+    - Executive Director of Middle School Programming
+        You're doing right by these kids
+    - From parents
+        Love the help and the pressure release
+    - From other administrators
+        Wow, what great results, I am going to start using this!
+- Infinite budget what would you do?
+    - Smaller classes
+    - Add programs that are recreations clubs 
+        - more languages
+        - more music electives
+        - more robotic electives
+        - Expand electives choices based on what kids want
+- What did you give up to implement flex-time?
+    - Some instruction time.
+    - Had to move to block schedule, which returns time back (no mountain time on block days)
+- Greatest fear at work
+    - Anything that jeopardizes student safety
+- Any push back for this system?
+    - Staff push back on grading switch
+    - A lot of strongly held beliefs in education, hard to change people's minds
+- Would have started using ASAP
+    - Did 2.5 years with google sheets
+    - Scott pushed for something better
+    - Would have jumped on this instantly if he could (had he known)
+- RTI
+    - Response To Intervention
+    - Track if students are making progress or not
+- Review if there needs to be new feature/change
+    - Admin perspective
+    - Ask teachers
+- Mountain Time is cheaper than paying teachers outside of school to help.
+    - Even paying only 5 teachers is more expensive
+
+
+_____________________________________________________________________________
+
+Yong notes about site:
+
+"buy now button is weird, not shopping for shoes."
+    - More clear call to action
+Ideally more information ABOVE the fold
+    - Value proposition missing
+        - knowing where students are
+        - able to improve student learning
+remove decade payment option
+Most important thing: Content to present to the user that confirms they got
+    what they payed for (email with temporary credentials, landing page for the site)
+    - You took their money, give them their shit [MOCK THIS]
+
+
+_____________________________________________________________________________
+
+Yong notes about pitch deck:
+
+Bullet points = DEATH
+
+Slides are background: What speaker says is not what the slide says. Slides
+    support the speaker.
+    Break down slides so that they are smaller. More concise information.
+
+    Add a slide that teaches the audience about what flex time is and what the 
+    problem is.
+    
+"Why" is missing from the first page
+    Education is changing
+    Impossible to provide intervention support without Flex Time.
+        Use interview with Stephen as example.
+        Flex time is hard to track
+        Student who need help can get, others can do exploratory learning
+        Problem is that this scheduling is hard to manage
+    One slide would be "Flex time scheduling is hard to manage" (is this the key problem?)
+        Schools who try to do find administrative overhead to be to high, so they scrap it
+        Knowing where students are is difficult without student tracking
+        Solutions such as Google Docs did not alleviate the problem

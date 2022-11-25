@@ -1,0 +1,17 @@
+{
+  "name": "music-ally-serverless",
+  "version": "1.0.0",
+  "description": "Serverless api for Music Ally",
+  "main": "server.js",
+  "repository": "git@github.com:BryceGraves/music-ally-serverless.git",
+  "author": "Bryce Graves <brycegraves97@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.618.0",
+    "firebase-admin": "^8.9.2"
+  },
+  "scripts": {
+    "start": "pm2 start server.js --watch"
+  }
+}

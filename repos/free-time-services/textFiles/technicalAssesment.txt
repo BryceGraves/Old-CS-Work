@@ -1,0 +1,35 @@
+Steps to take from a technical standpoint
+(Technical Assessment)
+
+1.  Understand the problem and software solution
+    - MEASURE!
+    - Is our solution REALLY faster??
+2.  Use the system! (spec, flow, features, etc.)
+    - Write those screen specs.
+    - Make that UX flow diagram. Can you find better flow?
+    - List features. What does it do???
+3.  "Look at the fucking code." -Yong (High level perspective)
+    - Look at it at a HIGH level.
+    - Look at bugs.
+    - Look at issues (current AND past).
+    - Who is committing?
+    - Look at commit history
+    - Look at branches
+    - What is the health of the app currently?
+4.  Apply legacy software technique (Lower level perspective)
+    - Run the damn tests!
+    - Code quality
+    - Dependencies
+    - Frame work
+    - Product environment
+    - Biggest code smell (BE OBJECTIVE - Hardest to change. Ugliest mess.)
+5.  DB Schema, Data
+6.  Domain mapping to UX/UI
+7.  Performance
+    - Big O(n)
+    - What are the bottle-necks?
+        - N + 1 query problem.
+        - Can stuff be done in 1 query instead of multiple?
+        - Can we get it down to 1 query?
+8.  Production Environment (in terms of cost)
+    - Last because this **can** often be the easiest to change.

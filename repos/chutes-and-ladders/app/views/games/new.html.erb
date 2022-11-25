@@ -1,0 +1,18 @@
+<%= global_header %>
+
+<h1>Start a new Game</h1>
+<%= form_for(@game) do |g| %>
+  <%= g.label(:name) %>
+  <%= g.text_field(:name) %>
+  <%= g.submit %>
+<% end %>
+
+<%if @game.errors.any? %>
+  <%= alert type: :danger, heading: "Could not create game:" do %>
+    <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

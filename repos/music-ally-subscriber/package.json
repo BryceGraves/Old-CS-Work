@@ -1,0 +1,19 @@
+{
+  "name": "music-ally-subscriber",
+  "version": "1.0.0",
+  "description": "Subscriber service for Music Ally",
+  "main": "server.js",
+  "repository": "https://github.com/BryceGraves/music-ally-subscriber",
+  "author": "Bryce Graves",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.635.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pm2": "^4.2.3"
+  },
+  "scripts": {
+    "start": "pm2 start server.js --namespace music-ally-subscriber --watch"
+  }
+}

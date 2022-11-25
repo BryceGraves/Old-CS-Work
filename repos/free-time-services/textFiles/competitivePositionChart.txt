@@ -1,0 +1,28 @@
+
+            |               |               
+    High    |               |
+            |               |        X
+            |               |   R           Q
+Time        |_______________|_________________
+Saved       |             S |               E
+            |               |
+    Low     |               |               F
+            | C             |
+            | M      N  G   |
+            |_______________|_________________
+
+            Low                        High
+
+                        Student Safety
+
+X = Free Time
+G = Google Docs
+N = Do nothing (maintain status quo of no free-time)
+M = Manual (paper documents)
+Q = QuickSchools (Parents can log in as well, see full schedule)
+R = Rediker Software (Less flexible schedules, parents can login)
+S = Skyward Software
+E = Enriching Students
+F = Flex Time Manager
+C = Microsoft Excel
+Y = CyberMax Class Scheduler

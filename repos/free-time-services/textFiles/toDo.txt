@@ -1,0 +1,49 @@
+Objectives to complete in order to finish pitch deck
+
+- Improve Competitive Advantage
+    - Focusing on UX is a problem - EVERYONE did it, and this is a RED FLAG!
+    
+
+"What we need"
+    - to go from 10 customers (you can do this now) to 101 customers
+    - How much time do we need? Let's bring it down from 2 years to 6 months?
+
+- Add testimonial from Stephen Duval
+    - "This product has increased productivity. What took teachers 20 minutes a week,
+        and myself 60 minutes every week with a daily reset, has been reduced to only
+        5 minutes each per week! Allows for fast 'response-to-intervention' to assist
+        with student academic standing."
+        - Ask Yong if we can make a composite testimonial like this.
+- Calculate Total Addressable Market
+    - 98,277 total schools * $1,000/year
+    - $98,000,000/year
+- Figure out how to calculate Total Serviceable Market
+    - Bottom-up approach
+    - https://nces.ed.gov/fastfacts/display.asp?id=84
+    - TSM = (Total # of Accounts) x (Annual Contract Value [ACV])
+    - TSM = (~13,000 [in 2006]) x ($1000/year)
+    - TSM = $13,000,000 annually
+    - This TSM is based off ALL potential Middle Schools purchasing this product.
+        This is includes middles schools that may not yet have flex time at their 
+        school.
+        Obviously not every account can be claimed, but I think the point is to just
+        see the whole market?
+- Figure out how to calculate Target Market
+    - This should be schools that already use flex time
+        - I cannot find a specific number, so lets say 20% of schools use flex time
+    - TM = (13,000 * .20) x ($1000/year)
+    - TM = $2,600,000
+- Calculate how much money we need to ask for
+    - How much does it cost to rent space?
+        https://bendtech.com/office-desk-space-rent/
+        BendTECH dedicated desk $250 a month / $9,000 for 3 dedicated desks for 1 year
+        Dedicated office space starts at $600 a month
+    - How much does it cost to run a server?
+        https://www.inmotionhosting.com/cloud-application-platform
+        $69 a month / $832.08 for 1 year
+    - Total amount to ask:
+        Advance for 2 years:
+            9,000 x 2 (3 desks, 2 years)             18,000
+            832.08 x 2 (server 2 years)              1,664.16
+            ________________________________________________
+            Total                                    20,000
