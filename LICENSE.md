@@ -1,2 +1,1 @@
-
-Copyright (C) 2017 Bryce Graves
+Copyright (C) 2022 Bryce Graves
